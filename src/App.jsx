@@ -1,4 +1,4 @@
-import './App.css'
+/*import './App.css'
 
 function App() {
   return (
@@ -51,4 +51,21 @@ function App() {
   )
 }
 
-export default App
+export default App */
+
+// src/App.jsx
+import { auth, db } from "./services/firebase";
+
+function App() {
+  console.log("Firebase Auth:", auth);
+  console.log("Firebase Firestore:", db);
+
+  return (
+    <div>
+      <h1>PlayCode</h1>
+      <p>Firebase conectado.</p>
+    </div>
+  );
+}
+
+export default App;
